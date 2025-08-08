@@ -167,9 +167,92 @@
 			"foreground": "#af4c95",     
 			"fontStyle": "bold"
 			}
-		},{
+		},
 
-		 // Modificadores de acceso (public, private, protected) y otros como static, final
+		//css
+		{
+			"scope": [
+			"support.type.property-name.css",
+			"support.type.property-name.scss"
+			],
+			"settings": {
+			"foreground": "#0a93b0",  
+			"fontStyle": "italic"
+			}
+		},
+
+		// 🎯 Valores CSS y unidades
+		{
+			"scope": [
+			"constant.numeric.css",
+			"constant.other.color.rgb-value.css",
+			"constant.other.unit.css",
+			"keyword.other.unit.css"
+			],
+			"settings": {
+			"foreground": "#f08947"
+			}
+		},
+
+		// 🎨 Colores como red, green, blue, etc.
+		{
+			"scope": [
+			"constant.other.color.css"
+			],
+			"settings": {
+			"foreground": "#33aa67"
+			}
+		},
+
+		// 🧩 Selectores (clases, IDs, etiquetas)
+		{
+			"scope": [
+			"entity.other.attribute-name.id.css",      // #id
+			"entity.other.attribute-name.class.css",   // .clase
+			"entity.name.tag.css"                      // etiquetas (body, h1...)
+			],
+			"settings": {
+			"foreground": "#7ad053", 
+			"fontStyle": "bold"
+			}
+		},
+
+		// ✨ Pseudoclases (:hover, :focus)
+		{
+			"scope": [
+			"entity.other.pseudo-class.css",
+			"entity.other.pseudo-element.css"
+			],
+			"settings": {
+			"foreground": "#72c26b",  // Verde pastel
+			"fontStyle": "italic"
+			}
+		},
+
+		// ⚙️ Funciones CSS (rgba, var, calc...)
+		{
+			"scope": [
+			"support.function.misc.css"
+			],
+			"settings": {
+			"foreground": "#56a355"
+			}
+		},
+
+		// 🔁 Variables CSS personalizadas (--nombre)
+		{
+			"scope": [
+			"variable.other.custom-property.css"
+			],
+			"settings": {
+			"foreground": "#b5e0a7",  // Verde claro
+			"fontStyle": "italic"
+			}
+		},
+		{
+
+		//java	
+		// Modificadores de acceso (public, private, protected) y otros como static, final
 		"scope": [
 			"storage.modifier.java",
 			"storage.modifier.ts",
