@@ -1,0 +1,21 @@
+{
+  "name": "sena-adso-theme",
+  "displayName": "SENA ADSO Theme",
+  "description": "Una extensión creada desde el SENA para el SENA, usando los colores representativos de ADSO en el SENA.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "SENA ADSO Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/SENA ADSO Theme-color-theme.json"
+      }
+    ]
+  }
+}
