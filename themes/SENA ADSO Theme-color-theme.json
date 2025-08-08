@@ -61,8 +61,8 @@
 		{
 			"scope": ["comment"],
 			"settings": {
-			"foreground": "#5c7554", // Verde grisáceo suave para no competir con el código
-			"fontStyle": "italic bold"    // Estilo cursiva para diferenciarlos fácilmente
+			"foreground": "#5c7554", 
+			"fontStyle": "italic bold"
 			}
 		},
 
@@ -70,7 +70,7 @@
 		{
 			"scope": ["string"],
 			"settings": {
-			"foreground": "#4caf50" // Verde institucional aplicado directamente a las cadenas de texto
+			"foreground": "#4caf50" 
 			}
 		},
 
@@ -78,8 +78,8 @@
 		{
 			"scope": ["keyword", "storage.type"],
 			"settings": {
-			"foreground": "#267f16", // Un verde más brillante para que las keywords resalten
-			"fontStyle": "bold"      // Negrita para destacar el control de flujo
+			"foreground": "#7ad053", 
+			"fontStyle": "bold" 
 			}
 		},
 
@@ -87,7 +87,7 @@
 		{
 			"scope": ["variable", "meta.definition.variable.name"],
 			"settings": {
-			"foreground": "#f08947" // Verde claro (casi pastel) para resaltar variables sin desentonar
+			"foreground": "#f08947" 
 			}
 		},
 
@@ -95,7 +95,7 @@
 		{
 			"scope": ["entity.name.function", "support.function"],
 			"settings": {
-			"foreground": "#6bbd6e" // Verde moderno más saturado, ideal para funciones
+			"foreground": "#6bbd6e" 
 			}
 		},
 
@@ -103,7 +103,7 @@
 		{
 			"scope": ["constant.numeric"],
 			"settings": {
-			"foreground": "#0a93b0" // Verde dólar, un guiño visual a valores numéricos
+			"foreground": "#0a93b0" 
 			}
 		},
 
@@ -111,7 +111,7 @@
 		{
 			"scope": ["entity.name.type", "support.class"],
 			"settings": {
-			"foreground": "#76b668" // Verde hoja vibrante para tipos y estructuras
+			"foreground": "#76b668" 
 			}
 		},
 
@@ -119,8 +119,82 @@
 		{
 			"scope": ["punctuation", "meta.brace", "meta.delimiter"],
 			"settings": {
-			"foreground": "#0a93b0" // Verde medio para símbolos como (), {}, []
+			"foreground": "#0a93b0" //para símbolos como (), {}, []
+			}
+		},
+
+
+		// Etiquetas HTML como <div>, <p>, <a>, etc.
+		{
+			"scope": ["entity.name.tag.html"],
+			"settings": {
+			"foreground": "#7ad053",     
+			"fontStyle": "bold"       
+			}
+		},
+
+		// Atributos de HTML como href, src, class, id, etc.
+		{
+			"scope": ["entity.other.attribute-name.html"],
+			"settings": {
+			"foreground": "#53d0b9",     
+			"fontStyle": "" 
+			}
+		},
+
+		// Valores de los atributos HTML como "https://...", "#", "button", etc.
+		{
+			"scope": ["string.quoted.double.html", "string.quoted.single.html"],
+			"settings": {
+			"foreground": "#f08947",    
+			"fontStyle": ""              // Sin estilo
+			}
+		},
+
+		// Comentarios en HTML: <!-- Esto es un comentario -->
+		{
+			"scope": ["comment.block.html"],
+			"settings": {
+			"foreground": "#5c7554",
+			"fontStyle": "italic"
+			}
+		},
+
+		// Doctype y otros metadatos como <!DOCTYPE html>
+		{
+			"scope": ["meta.tag.sgml.doctype.html"],
+			"settings": {
+			"foreground": "#af4c95",     
+			"fontStyle": "bold"
+			}
+		},{
+
+		 // Modificadores de acceso (public, private, protected) y otros como static, final
+		"scope": [
+			"storage.modifier.java",
+			"storage.modifier.ts",
+			"storage.modifier.kotlin",
+			"storage.modifier"
+			],
+			"settings": {
+			"foreground": "#0a93b0",    
+			"fontStyle": "bold"         
+			}
+		},
+
+		// Palabras clave como class, interface, extends, implements
+		{
+			"scope": [
+			"keyword.declaration.class",
+			"keyword.declaration.interface",
+			"keyword.control",
+			"keyword.other"
+			],
+			"settings": {
+			"foreground": "#0caece",
+			"fontStyle": "bold"
 			}
 		}
+
 	]
 }
