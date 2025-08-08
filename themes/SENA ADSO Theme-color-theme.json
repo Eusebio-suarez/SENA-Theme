@@ -55,5 +55,72 @@
 		"tab.activeForeground": "#eeffff",
 		"tab.inactiveBackground": "#1a211e",
 		"tab.inactiveForeground": "#bbbbbb",
-	}
+	},
+	"tokenColors": [
+		// Comentarios: para todo lo que esté después de "//" o entre "/* ... */"
+		{
+			"scope": ["comment"],
+			"settings": {
+			"foreground": "#5c7554", // Verde grisáceo suave para no competir con el código
+			"fontStyle": "italic bold"    // Estilo cursiva para diferenciarlos fácilmente
+			}
+		},
+
+		// Strings: texto entre comillas ("hola", 'mundo', etc.)
+		{
+			"scope": ["string"],
+			"settings": {
+			"foreground": "#4caf50" // Verde institucional aplicado directamente a las cadenas de texto
+			}
+		},
+
+		// Keywords: if, else, class, return, function, etc.
+		{
+			"scope": ["keyword", "storage.type"],
+			"settings": {
+			"foreground": "#267f16", // Un verde más brillante para que las keywords resalten
+			"fontStyle": "bold"      // Negrita para destacar el control de flujo
+			}
+		},
+
+		// Variables: nombres como edad, total, userName, etc.
+		{
+			"scope": ["variable", "meta.definition.variable.name"],
+			"settings": {
+			"foreground": "#f08947" // Verde claro (casi pastel) para resaltar variables sin desentonar
+			}
+		},
+
+		// Funciones: nombres de funciones definidas por el usuario
+		{
+			"scope": ["entity.name.function", "support.function"],
+			"settings": {
+			"foreground": "#6bbd6e" // Verde moderno más saturado, ideal para funciones
+			}
+		},
+
+		// Constantes numéricas: números como 5, 3.14, -7, etc.
+		{
+			"scope": ["constant.numeric"],
+			"settings": {
+			"foreground": "#0a93b0" // Verde dólar, un guiño visual a valores numéricos
+			}
+		},
+
+		// Tipos y clases: nombres de clases, tipos como String, Boolean, etc.
+		{
+			"scope": ["entity.name.type", "support.class"],
+			"settings": {
+			"foreground": "#76b668" // Verde hoja vibrante para tipos y estructuras
+			}
+		},
+
+		// Paréntesis y símbolos
+		{
+			"scope": ["punctuation", "meta.brace", "meta.delimiter"],
+			"settings": {
+			"foreground": "#0a93b0" // Verde medio para símbolos como (), {}, []
+			}
+		}
+	]
 }
