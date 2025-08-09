@@ -117,7 +117,7 @@
 		{
 			"scope": ["variable", "meta.definition.variable.name"],
 			"settings": {
-			"foreground": "#f08947" 
+			"foreground": "#f5b37c" 
 			}
 		},
 
@@ -175,7 +175,7 @@
 		{
 			"scope": ["string.quoted.double.html", "string.quoted.single.html"],
 			"settings": {
-			"foreground": "#f08947",    
+			"foreground": "#f5b37c",    
 			"fontStyle": ""              // Sin estilo
 			}
 		},
@@ -219,7 +219,7 @@
 			"keyword.other.unit.css"
 			],
 			"settings": {
-			"foreground": "#f08947"
+			"foreground": "#f5b37c"
 			}
 		},
 
