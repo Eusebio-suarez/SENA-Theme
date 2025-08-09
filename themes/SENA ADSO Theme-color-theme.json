@@ -11,10 +11,11 @@
 
 		//color de los iconos laterales
 		"activityBar.foreground": "#39a900",
+		"activityBar.activeBorder":"#10758e",
 		"activityBarBadge.foreground": "#ffffff",
 
 		// Barra de estado (inferior)
-		"statusBar.background": "#29690b",
+		"statusBar.background": "#2a3a2b",
 		"statusBar.foreground": "#ffffff",
 		"statusBar.debuggingBackground": "#39a900",
 		"statusBar.noFolderBackground": "#29690b",
@@ -27,7 +28,7 @@
 		"sideBarSectionHeader.foreground": "#39a900",
 
 		 // Barra de título (superior)
-		"titleBar.activeBackground": "#29690b",
+		"titleBar.activeBackground": "#2a3a2b",
 		"titleBar.activeForeground": "#ffffff",
 		"titleBar.inactiveBackground": "#1a1c21",
 		"titleBar.inactiveForeground": "#bbbbbb",
@@ -55,7 +56,36 @@
 		"tab.activeForeground": "#eeffff",
 		"tab.inactiveBackground": "#1a211e",
 		"tab.inactiveForeground": "#bbbbbb",
+
+		// ===== Búsqueda =====
+		"editor.findMatchBackground": "#39a90066",
+		"editor.findMatchHighlightBackground": "#39a90033",
+		"editor.findRangeHighlightBackground": "#39a90022",
+
+		// ===== Minimap =====
+		"minimap.findMatchHighlight": "#39a90088",
+		"minimap.selectionHighlight": "#39a90055",
+		"minimap.selectionOccurrenceHighlight": "#39a90044",
+
+		// ===== Listas / Navegación lateral =====
+		"list.activeSelectionBackground": "#39a90055",
+		"list.activeSelectionForeground": "#ffffff",
+		"list.highlightForeground": "#39a900",
+		"list.hoverBackground": "#39a90022",
+
+		// === MENÚS Y DROPDOWNS ===
+		"menu.background": "#111a14",
+		"menu.foreground": "#c5d4c7",
+		"menu.selectionBackground": "#39a90025",
+		"menu.selectionForeground": "#39a900",
+		"menu.border": "#1a251d",
+		
+		// === BOTONES ===
+		"button.background": "#0a93b0",
+		"button.foreground": "#ffffff",
+		"button.hoverBackground": "#0a93b0",
 	},
+	
 	"tokenColors": [
 		// Comentarios: para todo lo que esté después de "//" o entre "/* ... */"
 		{
@@ -79,7 +109,7 @@
 			"scope": ["keyword", "storage.type"],
 			"settings": {
 			"foreground": "#7ad053", 
-			"fontStyle": "bold" 
+			"fontStyle": "" 
 			}
 		},
 
@@ -128,8 +158,7 @@
 		{
 			"scope": ["entity.name.tag.html"],
 			"settings": {
-			"foreground": "#7ad053",     
-			"fontStyle": "bold"       
+			"foreground": "#7ad053"     
 			}
 		},
 
