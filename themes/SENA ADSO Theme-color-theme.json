@@ -156,7 +156,13 @@
 
 		// Etiquetas HTML como <div>, <p>, <a>, etc.
 		{
-			"scope": ["entity.name.tag.html"],
+			"scope": [
+				"entity.name.tag.html",
+				"entity.name.tag.jsx",
+				"entity.name.tag.js",
+				"entity.name.tag.ts",
+				"entity.name.tag.tsx"
+			],
 			"settings": {
 			"foreground": "#7ad053"     
 			}
@@ -306,7 +312,70 @@
 			"foreground": "#0caece",
 			"fontStyle": "bold"
 			}
+		},
+		// Atributos como href, src, class, className, id, etc.
+		{
+		"scope": [
+			"entity.other.attribute-name.html",
+			"entity.other.attribute-name.jsx",
+			"entity.other.attribute-name.js",
+			"entity.other.attribute-name.ts",
+			"entity.other.attribute-name.tsx"
+		],
+		"settings": {
+			"foreground": "#53d0b9",     
+			"fontStyle": "" 
 		}
+		},
 
+		// Valores de los atributos como "https://...", "#", "button", etc.
+		{
+		"scope": [
+			"string.quoted.double.html",
+			"string.quoted.single.html",
+			"string.quoted.double.jsx",
+			"string.quoted.single.jsx",
+			"string.quoted.double.js",
+			"string.quoted.single.js",
+			"string.quoted.double.ts",
+			"string.quoted.single.ts",
+			"string.quoted.double.tsx",
+			"string.quoted.single.tsx"
+		],
+		"settings": {
+			"foreground": "#f5b37c",    
+			"fontStyle": ""
+		}
+		},
+
+		// Comentarios: HTML <!-- --> y JSX/TSX {/* */}
+		{
+		"scope": [
+			"comment.block.html",
+			"comment.block.jsx",
+			"comment.block.js",
+			"comment.block.ts",
+			"comment.block.tsx"
+		],
+		"settings": {
+			"foreground": "#5c7554",
+			"fontStyle": "italic"
+		}
+		},
+
+		// Doctype y metadatos HTML + etiquetas de apertura/cierre en JSX/TSX
+		{
+		"scope": [
+			"meta.tag.sgml.doctype.html",
+			"punctuation.definition.tag.jsx",
+			"punctuation.definition.tag.js",
+			"punctuation.definition.tag.ts",
+			"punctuation.definition.tag.tsx"
+		],
+		"settings": {
+			"foreground": "#af4c95",     
+			"fontStyle": "bold"
+		}
+		}
 	]
 }
