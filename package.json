@@ -9,6 +9,13 @@
   "categories": [
     "Themes"
   ],
+  "icon": "/icons/sena-icon.png",
+  "author": {
+    "name": "Eusebio suarez",
+    "email": "eusebiosuaresmartines@gmail.com",
+    "url": "https://github.com/Eusebio-suarez"
+  
+  },
   "contributes": {
     "themes": [
       {
@@ -17,5 +24,12 @@
         "path": "./themes/SENA ADSO Theme-color-theme.json"
       }
     ]
-  }
+  },
+
+  "repository": {
+      "url": "https://github.com/Eusebio-suarez/SENA-Theme.git",
+      "type": "git"
+  },
+
+  "publisher": "ESM-Dev"
 }
