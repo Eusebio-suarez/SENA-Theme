@@ -11,6 +11,7 @@ Colores pensados para ser agradables a la vista y mantener la concentración dur
 > Capturas de ejemplo del tema en acción
 
 ![Captura 1](./images/captura1.png)  
+---
 ![Captura 2](./images/captura2.png)  
 
 ---
